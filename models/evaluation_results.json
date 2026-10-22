@@ -1,0 +1,442 @@
+{
+  "primary_model": "Random_Forest",
+  "features": [
+    "vessel_count",
+    "ping_count",
+    "low_speed_vessels",
+    "cargo_vessels",
+    "tanker_vessels",
+    "tug_vessels",
+    "military_vessels",
+    "avg_sog",
+    "std_sog",
+    "avg_length",
+    "avg_draft",
+    "low_speed_ratio",
+    "vessel_count_lag_1h",
+    "low_speed_lag_1h",
+    "vessel_count_lag_2h",
+    "low_speed_lag_2h",
+    "vessel_count_lag_3h",
+    "low_speed_lag_3h",
+    "vessel_count_lag_6h",
+    "low_speed_lag_6h",
+    "vessel_count_lag_12h",
+    "low_speed_lag_12h",
+    "vessel_count_lag_24h",
+    "low_speed_lag_24h",
+    "vessel_count_diff_1h",
+    "vessel_count_diff_24h",
+    "vessel_count_rolling_mean_6h",
+    "vessel_count_rolling_std_6h",
+    "vessel_count_rolling_mean_24h",
+    "vessel_count_rolling_max_24h",
+    "hour_sin",
+    "hour_cos",
+    "dayofweek_sin",
+    "dayofweek_cos",
+    "is_weekend"
+  ],
+  "models_comparison": {
+    "Dummy_Baseline": {
+      "accuracy": 0.7038,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.2962,
+      "brier_score": 0.2962,
+      "confusion_matrix": [
+        [
+          1537,
+          0
+        ],
+        [
+          647,
+          0
+        ]
+      ],
+      "test_samples": 2184,
+      "true_positives": 0,
+      "false_positives": 0,
+      "true_negatives": 1537,
+      "false_negatives": 647
+    },
+    "Logistic_Regression": {
+      "accuracy": 0.8777,
+      "precision": 0.75,
+      "recall": 0.881,
+      "f1_score": 0.8102,
+      "roc_auc": 0.9549,
+      "pr_auc": 0.9106,
+      "brier_score": 0.0843,
+      "confusion_matrix": [
+        [
+          1347,
+          190
+        ],
+        [
+          77,
+          570
+        ]
+      ],
+      "test_samples": 2184,
+      "true_positives": 570,
+      "false_positives": 190,
+      "true_negatives": 1347,
+      "false_negatives": 77
+    },
+    "Random_Forest": {
+      "accuracy": 0.8993,
+      "precision": 0.8054,
+      "recall": 0.8702,
+      "f1_score": 0.8366,
+      "roc_auc": 0.9627,
+      "pr_auc": 0.9167,
+      "brier_score": 0.0725,
+      "confusion_matrix": [
+        [
+          1401,
+          136
+        ],
+        [
+          84,
+          563
+        ]
+      ],
+      "test_samples": 2184,
+      "true_positives": 563,
+      "false_positives": 136,
+      "true_negatives": 1401,
+      "false_negatives": 84
+    },
+    "XGBoost": {
+      "accuracy": 0.908,
+      "precision": 0.8431,
+      "recall": 0.847,
+      "f1_score": 0.845,
+      "roc_auc": 0.964,
+      "pr_auc": 0.9228,
+      "brier_score": 0.0679,
+      "confusion_matrix": [
+        [
+          1435,
+          102
+        ],
+        [
+          99,
+          548
+        ]
+      ],
+      "test_samples": 2184,
+      "true_positives": 548,
+      "false_positives": 102,
+      "true_negatives": 1435,
+      "false_negatives": 99
+    }
+  },
+  "top_features": [
+    {
+      "feature": "vessel_count",
+      "importance": 0.2289,
+      "xgb_importance": 0.3351,
+      "description": "Current number of active distinct vessels in the port area"
+    },
+    {
+      "feature": "ping_count",
+      "importance": 0.1286,
+      "xgb_importance": 0.0503,
+      "description": "AIS operational metric: ping count"
+    },
+    {
+      "feature": "vessel_count_lag_1h",
+      "importance": 0.0917,
+      "xgb_importance": 0.1492,
+      "description": "Vessel count in the previous hour (t-1)"
+    },
+    {
+      "feature": "low_speed_vessels",
+      "importance": 0.0611,
+      "xgb_importance": 0.0699,
+      "description": "Count of stationary/slow vessels (speed <= 0.5 kt, anchored or berthed)"
+    },
+    {
+      "feature": "vessel_count_lag_2h",
+      "importance": 0.0593,
+      "xgb_importance": 0.0097,
+      "description": "AIS operational metric: vessel count lag 2h"
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 0.0531,
+      "xgb_importance": 0.0272,
+      "description": "Cyclical time of day factor (cosine transform)"
+    },
+    {
+      "feature": "tug_vessels",
+      "importance": 0.0493,
+      "xgb_importance": 0.0145,
+      "description": "Count of active harbor tugs and towing vessels"
+    },
+    {
+      "feature": "hour_sin",
+      "importance": 0.0267,
+      "xgb_importance": 0.0269,
+      "description": "Cyclical time of day factor (sine transform)"
+    },
+    {
+      "feature": "vessel_count_rolling_mean_24h",
+      "importance": 0.0257,
+      "xgb_importance": 0.0172,
+      "description": "Average vessel activity over the past 24 hours"
+    },
+    {
+      "feature": "vessel_count_rolling_mean_6h",
+      "importance": 0.024,
+      "xgb_importance": 0.0134,
+      "description": "Average vessel activity over the past 6 hours"
+    },
+    {
+      "feature": "low_speed_lag_1h",
+      "importance": 0.0227,
+      "xgb_importance": 0.0141,
+      "description": "AIS operational metric: low speed lag 1h"
+    },
+    {
+      "feature": "vessel_count_lag_24h",
+      "importance": 0.0197,
+      "xgb_importance": 0.008,
+      "description": "AIS operational metric: vessel count lag 24h"
+    },
+    {
+      "feature": "low_speed_lag_2h",
+      "importance": 0.0193,
+      "xgb_importance": 0.0095,
+      "description": "AIS operational metric: low speed lag 2h"
+    },
+    {
+      "feature": "vessel_count_lag_3h",
+      "importance": 0.0175,
+      "xgb_importance": 0.0123,
+      "description": "AIS operational metric: vessel count lag 3h"
+    },
+    {
+      "feature": "vessel_count_diff_1h",
+      "importance": 0.015,
+      "xgb_importance": 0.0226,
+      "description": "Short-term momentum: change in vessel count in the last hour"
+    }
+  ],
+  "all_features_importance": [
+    {
+      "feature": "vessel_count",
+      "importance": 0.2289,
+      "xgb_importance": 0.3351,
+      "description": "Current number of active distinct vessels in the port area"
+    },
+    {
+      "feature": "ping_count",
+      "importance": 0.1286,
+      "xgb_importance": 0.0503,
+      "description": "AIS operational metric: ping count"
+    },
+    {
+      "feature": "vessel_count_lag_1h",
+      "importance": 0.0917,
+      "xgb_importance": 0.1492,
+      "description": "Vessel count in the previous hour (t-1)"
+    },
+    {
+      "feature": "low_speed_vessels",
+      "importance": 0.0611,
+      "xgb_importance": 0.0699,
+      "description": "Count of stationary/slow vessels (speed <= 0.5 kt, anchored or berthed)"
+    },
+    {
+      "feature": "vessel_count_lag_2h",
+      "importance": 0.0593,
+      "xgb_importance": 0.0097,
+      "description": "AIS operational metric: vessel count lag 2h"
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 0.0531,
+      "xgb_importance": 0.0272,
+      "description": "Cyclical time of day factor (cosine transform)"
+    },
+    {
+      "feature": "tug_vessels",
+      "importance": 0.0493,
+      "xgb_importance": 0.0145,
+      "description": "Count of active harbor tugs and towing vessels"
+    },
+    {
+      "feature": "hour_sin",
+      "importance": 0.0267,
+      "xgb_importance": 0.0269,
+      "description": "Cyclical time of day factor (sine transform)"
+    },
+    {
+      "feature": "vessel_count_rolling_mean_24h",
+      "importance": 0.0257,
+      "xgb_importance": 0.0172,
+      "description": "Average vessel activity over the past 24 hours"
+    },
+    {
+      "feature": "vessel_count_rolling_mean_6h",
+      "importance": 0.024,
+      "xgb_importance": 0.0134,
+      "description": "Average vessel activity over the past 6 hours"
+    },
+    {
+      "feature": "low_speed_lag_1h",
+      "importance": 0.0227,
+      "xgb_importance": 0.0141,
+      "description": "AIS operational metric: low speed lag 1h"
+    },
+    {
+      "feature": "vessel_count_lag_24h",
+      "importance": 0.0197,
+      "xgb_importance": 0.008,
+      "description": "AIS operational metric: vessel count lag 24h"
+    },
+    {
+      "feature": "low_speed_lag_2h",
+      "importance": 0.0193,
+      "xgb_importance": 0.0095,
+      "description": "AIS operational metric: low speed lag 2h"
+    },
+    {
+      "feature": "vessel_count_lag_3h",
+      "importance": 0.0175,
+      "xgb_importance": 0.0123,
+      "description": "AIS operational metric: vessel count lag 3h"
+    },
+    {
+      "feature": "vessel_count_diff_1h",
+      "importance": 0.015,
+      "xgb_importance": 0.0226,
+      "description": "Short-term momentum: change in vessel count in the last hour"
+    },
+    {
+      "feature": "vessel_count_rolling_max_24h",
+      "importance": 0.0142,
+      "xgb_importance": 0.0124,
+      "description": "Peak vessel count observed during the last 24 hours"
+    },
+    {
+      "feature": "vessel_count_diff_24h",
+      "importance": 0.0133,
+      "xgb_importance": 0.0116,
+      "description": "AIS operational metric: vessel count diff 24h"
+    },
+    {
+      "feature": "low_speed_ratio",
+      "importance": 0.0118,
+      "xgb_importance": 0.0153,
+      "description": "Proportion of slow/docked craft relative to total fleet"
+    },
+    {
+      "feature": "military_vessels",
+      "importance": 0.0094,
+      "xgb_importance": 0.0074,
+      "description": "Count of active naval and government vessels"
+    },
+    {
+      "feature": "low_speed_lag_3h",
+      "importance": 0.0091,
+      "xgb_importance": 0.0095,
+      "description": "AIS operational metric: low speed lag 3h"
+    },
+    {
+      "feature": "vessel_count_rolling_std_6h",
+      "importance": 0.0088,
+      "xgb_importance": 0.0082,
+      "description": "AIS operational metric: vessel count rolling std 6h"
+    },
+    {
+      "feature": "low_speed_lag_24h",
+      "importance": 0.0086,
+      "xgb_importance": 0.0113,
+      "description": "AIS operational metric: low speed lag 24h"
+    },
+    {
+      "feature": "std_sog",
+      "importance": 0.0085,
+      "xgb_importance": 0.0088,
+      "description": "AIS operational metric: std sog"
+    },
+    {
+      "feature": "avg_length",
+      "importance": 0.0084,
+      "xgb_importance": 0.0095,
+      "description": "AIS operational metric: avg length"
+    },
+    {
+      "feature": "avg_sog",
+      "importance": 0.0083,
+      "xgb_importance": 0.0098,
+      "description": "Average speed over ground across all active vessels (knots)"
+    },
+    {
+      "feature": "cargo_vessels",
+      "importance": 0.0083,
+      "xgb_importance": 0.0112,
+      "description": "Count of active commercial cargo vessels"
+    },
+    {
+      "feature": "avg_draft",
+      "importance": 0.0083,
+      "xgb_importance": 0.0101,
+      "description": "Average vessel draft in meters"
+    },
+    {
+      "feature": "vessel_count_lag_12h",
+      "importance": 0.0075,
+      "xgb_importance": 0.0104,
+      "description": "AIS operational metric: vessel count lag 12h"
+    },
+    {
+      "feature": "vessel_count_lag_6h",
+      "importance": 0.0074,
+      "xgb_importance": 0.0124,
+      "description": "AIS operational metric: vessel count lag 6h"
+    },
+    {
+      "feature": "dayofweek_sin",
+      "importance": 0.0072,
+      "xgb_importance": 0.0127,
+      "description": "AIS operational metric: dayofweek sin"
+    },
+    {
+      "feature": "low_speed_lag_12h",
+      "importance": 0.0061,
+      "xgb_importance": 0.0082,
+      "description": "AIS operational metric: low speed lag 12h"
+    },
+    {
+      "feature": "low_speed_lag_6h",
+      "importance": 0.0052,
+      "xgb_importance": 0.0106,
+      "description": "AIS operational metric: low speed lag 6h"
+    },
+    {
+      "feature": "dayofweek_cos",
+      "importance": 0.0035,
+      "xgb_importance": 0.0168,
+      "description": "AIS operational metric: dayofweek cos"
+    },
+    {
+      "feature": "tanker_vessels",
+      "importance": 0.0019,
+      "xgb_importance": 0.008,
+      "description": "AIS operational metric: tanker vessels"
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.0015,
+      "xgb_importance": 0.016,
+      "description": "AIS operational metric: is weekend"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+[
+  {
+    "timestamp": "2025-12-30 22:00:00",
+    "inputs": {
+      "vessel_count": 25,
+      "low_speed_vessels": 21,
+      "avg_sog": 1.33,
+      "cargo_vessels": 4,
+      "tug_vessels": 7,
+      "military_vessels": 9
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-30 22:00:00"
+  },
+  {
+    "timestamp": "2025-12-30 23:00:00",
+    "inputs": {
+      "vessel_count": 24,
+      "low_speed_vessels": 16,
+      "avg_sog": 2.92,
+      "cargo_vessels": 5,
+      "tug_vessels": 6,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-30 23:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 00:00:00",
+    "inputs": {
+      "vessel_count": 22,
+      "low_speed_vessels": 14,
+      "avg_sog": 2.55,
+      "cargo_vessels": 4,
+      "tug_vessels": 5,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 00:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 01:00:00",
+    "inputs": {
+      "vessel_count": 22,
+      "low_speed_vessels": 17,
+      "avg_sog": 1.98,
+      "cargo_vessels": 4,
+      "tug_vessels": 5,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 01:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 02:00:00",
+    "inputs": {
+      "vessel_count": 21,
+      "low_speed_vessels": 18,
+      "avg_sog": 2.69,
+      "cargo_vessels": 5,
+      "tug_vessels": 4,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 02:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 03:00:00",
+    "inputs": {
+      "vessel_count": 23,
+      "low_speed_vessels": 19,
+      "avg_sog": 3.11,
+      "cargo_vessels": 5,
+      "tug_vessels": 4,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 03:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 04:00:00",
+    "inputs": {
+      "vessel_count": 23,
+      "low_speed_vessels": 17,
+      "avg_sog": 2.98,
+      "cargo_vessels": 5,
+      "tug_vessels": 4,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 04:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 05:00:00",
+    "inputs": {
+      "vessel_count": 23,
+      "low_speed_vessels": 13,
+      "avg_sog": 3.61,
+      "cargo_vessels": 6,
+      "tug_vessels": 4,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 05:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 06:00:00",
+    "inputs": {
+      "vessel_count": 21,
+      "low_speed_vessels": 13,
+      "avg_sog": 3.89,
+      "cargo_vessels": 6,
+      "tug_vessels": 3,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 06:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 07:00:00",
+    "inputs": {
+      "vessel_count": 22,
+      "low_speed_vessels": 14,
+      "avg_sog": 4.42,
+      "cargo_vessels": 6,
+      "tug_vessels": 2,
+      "military_vessels": 9
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 07:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 08:00:00",
+    "inputs": {
+      "vessel_count": 19,
+      "low_speed_vessels": 13,
+      "avg_sog": 4.11,
+      "cargo_vessels": 6,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.909,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 08:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 09:00:00",
+    "inputs": {
+      "vessel_count": 20,
+      "low_speed_vessels": 14,
+      "avg_sog": 3.85,
+      "cargo_vessels": 6,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 09:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 10:00:00",
+    "inputs": {
+      "vessel_count": 19,
+      "low_speed_vessels": 13,
+      "avg_sog": 4.1,
+      "cargo_vessels": 5,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.909,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 10:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 11:00:00",
+    "inputs": {
+      "vessel_count": 19,
+      "low_speed_vessels": 13,
+      "avg_sog": 3.95,
+      "cargo_vessels": 5,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.909,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 11:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 12:00:00",
+    "inputs": {
+      "vessel_count": 20,
+      "low_speed_vessels": 13,
+      "avg_sog": 4.29,
+      "cargo_vessels": 6,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.9481,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 12:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 13:00:00",
+    "inputs": {
+      "vessel_count": 20,
+      "low_speed_vessels": 14,
+      "avg_sog": 4.15,
+      "cargo_vessels": 6,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.96,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 13:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 14:00:00",
+    "inputs": {
+      "vessel_count": 18,
+      "low_speed_vessels": 13,
+      "avg_sog": 4.17,
+      "cargo_vessels": 6,
+      "tug_vessels": 1,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.87,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 14:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 15:00:00",
+    "inputs": {
+      "vessel_count": 18,
+      "low_speed_vessels": 13,
+      "avg_sog": 4.13,
+      "cargo_vessels": 6,
+      "tug_vessels": 1,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.87,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 15:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 16:00:00",
+    "inputs": {
+      "vessel_count": 16,
+      "low_speed_vessels": 13,
+      "avg_sog": 2.07,
+      "cargo_vessels": 3,
+      "tug_vessels": 1,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.7919,
+      "confidence_level": "Moderate",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 16:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 17:00:00",
+    "inputs": {
+      "vessel_count": 16,
+      "low_speed_vessels": 13,
+      "avg_sog": 2.13,
+      "cargo_vessels": 4,
+      "tug_vessels": 1,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.7919,
+      "confidence_level": "Moderate",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 17:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 18:00:00",
+    "inputs": {
+      "vessel_count": 15,
+      "low_speed_vessels": 12,
+      "avg_sog": 2.24,
+      "cargo_vessels": 4,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.74,
+      "confidence_level": "Moderate",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 18:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 19:00:00",
+    "inputs": {
+      "vessel_count": 16,
+      "low_speed_vessels": 13,
+      "avg_sog": 2.17,
+      "cargo_vessels": 4,
+      "tug_vessels": 2,
+      "military_vessels": 8
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.7919,
+      "confidence_level": "Moderate",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 19:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 20:00:00",
+    "inputs": {
+      "vessel_count": 17,
+      "low_speed_vessels": 13,
+      "avg_sog": 2.62,
+      "cargo_vessels": 4,
+      "tug_vessels": 2,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.831,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 20:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 21:00:00",
+    "inputs": {
+      "vessel_count": 19,
+      "low_speed_vessels": 15,
+      "avg_sog": 2.14,
+      "cargo_vessels": 4,
+      "tug_vessels": 4,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.9348,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 21:00:00"
+  },
+  {
+    "timestamp": "2025-12-31 22:00:00",
+    "inputs": {
+      "vessel_count": 19,
+      "low_speed_vessels": 16,
+      "avg_sog": 1.48,
+      "cargo_vessels": 3,
+      "tug_vessels": 5,
+      "military_vessels": 7
+    },
+    "prediction": {
+      "risk_class": 1,
+      "risk_label": "High Congestion Risk",
+      "risk_probability": 0.9476,
+      "confidence_level": "High",
+      "threshold": 18.0
+    },
+    "created_at": "2025-12-31 22:00:00"
+  }
+]

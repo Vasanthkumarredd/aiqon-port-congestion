@@ -1,0 +1,16 @@
+{
+  "raw_record_count": 3242856,
+  "unique_mmsi_count": 1224,
+  "min_timestamp": "2025-01-01 00:00:01",
+  "max_timestamp": "2025-12-31 23:59:57",
+  "total_hourly_records": 8735,
+  "train_records": 6551,
+  "test_records": 2184,
+  "train_start": "2025-01-02 00:00:00",
+  "train_end": "2025-10-01 22:00:00",
+  "test_start": "2025-10-01 23:00:00",
+  "test_end": "2025-12-31 22:00:00",
+  "high_activity_threshold": 18.0,
+  "target_column": "target_high_activity",
+  "proxy_definition": "Next-hour active distinct vessels >= 18.0 (training set 75th percentile)"
+}
